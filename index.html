@@ -1,536 +1,560 @@
-<!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Kanish- Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/1.png" rel="icon">
-  <link href="assets/img/1.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!--  CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <!-- <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
-
-  <!--  Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.js"></script>
+    <link href="./icon.css" rel="stylesheet">
+    <script type="module" src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
 </head>
-
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none" ></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header" data-aos="fade-in">
-    <div class="d-flex flex-column">
-      <style>
-        /*--------------------------
-crical shap animation
----------------------------*/
-#spinner{
-            position: relative;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            padding-left: 55px;
-
+    <i class="bi bi-list mobile-nav-toggle d-xl-none" ></i>
+    <style>
+        .container{
+           
+            box-shadow: 15px 15px 15px 15px solid rgb(48, 128, 2);
         }
-        #spinner::before,
-        #spinner::after{
-            content: "";
-            position: absolute;
-            border-radius: inherit;
-        }
-        #spinner::before{
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(0deg,#ff00cc 0%,#333399 100%);  
-            animation: spin .5s infinite linear;
-        }
-        #spinner::after{
-            width: 93%;
-            height: 93%;
-            background-image: url("assets/img/profile.jpg");    
+		/* .img-responsive{
+            border-radius: 10px;
+            
+        } */
+        .navimg{
+            height: 300px;
+            background-image: url('./kanishkaran\ \(3\).jpg');
+            /* background-size: contain; */
             background-repeat: no-repeat;
-            background-size: cover;
-            top:50%;
-            left:86%;
-            transform: translate(-50%,-50%);
+           background-size: contain;
         }
-      
-        @keyframes spin{
-            to{
-                transform: rotate(360deg);
-            }
-        }
-		.icon:hover{
-		background: rgb(2,0,36);
-		background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(233,19,52,1) 35%, rgba(0,212,255,1) 100%);
-	}
-		
-      </style>
-      <div class="profile">
-        <div id="spinner" >
-          
-        </div>
-        
-        <h1 class="text-light"><a href="index.html">Kanish</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter icon"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bi bi-github"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
+        /* .img-responsive:hover{
+            opacity: 0.5;
+        } */
+		table{
+			display:flex;
+			table-layot:fixed;
+		}
+    </style>
+	
+    <div class="container">
 
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projects</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
+       <div class="row navimg img img-responsive">
+        <!-- <h1 class="Name"><a href="#" >KANISHKARAN M</a></h1> -->
+       </div>
+       <hr>
 
-  <!-- ======= Hero Section ======= -->
-  <section class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1 class="text-primary animate-charcter fs-1">KANISHKARAN</h1>
-      <p class="text-danger">I'm <span class="typed text-info" data-typed-items="Designer, Developer, Student, Photographer"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section >
-      <div class="container">
+       
+       <div class="row">
+        <!-- <h1>Profile</h1> -->
 
         
-
-        <div class="row">
-		<div class="section-title">
-			<h2>Profile</h2>
-		</div>
-          <div class="col-lg-4" data-aos="fade-right">
-            <img id="img" src="assets/img/profile.jpg" class="img img-responsive w-100 " alt="" >
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Designer &amp; Web Developer.</h3>
-            
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 june 2003</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <a href="#">Link</a></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8220405679</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>TAMIL NADU, INDIA</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.voc Software Developed</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>kanizero5@gmail.com</span></li>
-                 
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    
-
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
+        <div class="col-lg-8 pt-4 pt-lg- content" data-aos="fade-left">
+          <h3>Contact information:</h3>
           
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Kanish</h4>
-              <p>A highly creative Web Designer with an Associate’s degree in Graphic Design and one year of experience working as a Junior Designer. Proven skills in HTML, CSS, and Adobe Creative Suite. Ability to work independently and collaborate effectively with a team.
-                Excellent written and verbal communication skills. seeking an entry-level position in web design.</p>
-          
+          <div class="row">
+            <div class="col-lg-5">
               <ul>
-                <li>Kollankollai Pullanviduthy</li>
-                <li>+91 8220405679</li>
-                <li>kanizero5@gmail.com</li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 8220405679</span></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <a href="#">kanizero5@gmail.com</a></li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Linkedin Profile:</strong> <span>KANISHKARAN</span></li>
+
+
               </ul>
             </div>
-
-            <h2 class="resume-title">Education</h2>
-            <div class="resume-item">
-              <h4>B.VOC SOFTWARE DEVELOPMENT</h4>
-              <h5>2023 - 2026</h5>
-              <p><a href="https://www.alagappauniversity.ac.in/">Alagappa University</a></p>
-              <p>Honors: Cum laude (GPA: 6.8/10.0)
-              Dean’s List for 6 semesters
-              
-              Thesis: Teenagers, Texting, and Interpersonal Relationships
-              Relevant Coursework: Language and Identity, Media and Values, Mass Media Law
-              Active member of the Wagner Student Association and the NYU Arts and Culture Network</p>
-            </div>
-            <div class="resume-item">
-              <h4>D.VOC SOFTWARE DEVELOPMENT</h4>
-              <h5>2022 - 2023</h5>
-              <p><a href="https://www.ruraluniv.ac.in/">The Gandhigram Rural Institute - Deemed University</a></p>
-              <p>Honors: Cum laude (GPA: 9.25/10.0)
-                Dean’s List for 2 semesters
+            <div class="col-sm-4">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span>4/510,KollanKollai,Pullanviduthy,Alangudi-Tk,Pudukkottai-Ds,Pin-622304</span></li>
                 
-                Thesis: Teenagers, Texting, and Interpersonal Relationships
-                Relevant Coursework: Language and Identity, Media and Values, Mass Media Law
-                Active member of the Wagner Student Association and the NYU Arts and Culture Network</p>
-            </div>
-            <div class="resume-item">
-              <h4>HSC</h4>
-              <h5>2022 - 2023</h5>
-              <p>government higher secondary school naduvasal</p>
-              <p>                
-                Thesis: Teenagers, Texting, and Interpersonal Relationships
-                Relevant Coursework: Language and Identity, Media and Values, Mass Media Law
-                Active member of the Wagner Student Association and the NYU Arts and Culture Network</p>
-            </div>
-            <div class="resume-item">
-              <h4>SSLC</h4>
-              <h5>2022 - 2023</h5>
-              <p>government boys higher secondary school kottamanglam</p>
-              <p>                
-                Thesis: Teenagers, Texting, and Interpersonal Relationships
-                Relevant Coursework: Language and Identity, Media and Values, Mass Media Law
-                Active member of the Wagner Student Association and the NYU Arts and Culture Network</p>
+               
+              </ul>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design </h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Junior Graphic design </h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
+        </div>
+        <div class="col-lg-4  pt-4 pt-lg-3 content" data-aos="fade-right">
+            <img src="Untitled design (1).jpg" class="img-responsive" alt=""  width="300px" height="300px">
+          </div>
+      </div>
+      <div class="row">
+        <h3>Objective:</h3>
+        <p class="bi bi-chevron-right">
+		Aspiring web developer with a passion for coding and a strong foundation in front-end and back-end development technologies.
+		Eager to leverage my skills in HTML, CSS, JavaScript, and Bootstrap,Reactjs to contribute to innovative web projects and gain hands-on experience in the industry.
+		Committed to continuous learning and staying updated with emerging trends and best practices in web development.
+		Seeking an opportunity to work with a dynamic team where I can apply my knowledge, grow professionally, and make meaningful contributions to the field of web development.
+           </p>            
+       </div>
+
+      
+       
+       <div class="row">
+        <h3>Education:</h3>
+        <style>
+            td{
+                text-transform: capitalize;
+            }
+        </style>
+        <table class="table table-responsive table table-striped">
+            <tr>
+                <th>Degree</th>
+                <th>Name Of The Institution</th>
+                <th>University/School</th>
+                <th>Percentage</th>
+                <th>Year Of Passing</th>
+            </tr>
+            <tr>
+                <td style="text-transform: capitalize;">B.Voc Software Development</td>
+                <td>ALAGAPPA UNIVERSITY-KARAIKUDI</td>
+                <td>Govt.Of.TamilNadu</td>
+                <td>--</td>
+                <td>2026</td>
+            </tr>
+            <tr>
+                <td style="text-transform: capitalize;">D.Voc Software Development</td>
+                <td>THE GANDHIGRAM RURAL UNIVERSITY-DINDUGAL</td>
+                <td>Govt.Of.India</td>
+                <td>96%</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>HSC</td>
+                <td style="text-transform: capitalize;">GOVERNMENT
+                    HIGHER
+                    SECONDARY
+                    SCHOOL -
+                    NEDUVASAL</td>
+                <td>STATEBOARD</td>
+                <td>68.42%</td>
+                <td>2021</td>
+
+            </tr>
+            <tr>
+                <td>SSLC</td>
+                <td style="text-transform: capitalize;">GOVERNMENT
+                    BOYS HIGHER
+                    SECONDARY
+                    SCHOOL -
+                    KOTHAMAGALAM</td>
+                <td>STATEBOARD</td>
+                <td>60%</td>
+                <td>2019</td>
+
+            </tr>
+
+        </table>
+       </div>
+       <div class="row">
+        <h3 class="bi bi-chevron-right">Technical skills:</h3>
+
+        <ul>
+
+         
             
-          </div>
+            <li>Proficient in (HTML5,CSS3,JAVASCRIPT) and Microsoft Office Suite (Word, Excel, PowerPoint)</li>
+            <li>Familiarity with responsive web design principles</li>
+            <li>Basic understanding of version control using Github</li>
+            <li>Basic understanding of front-end design software like Figma</li>
+            <li>Knowledge of front-end framework such as Bootstrap and Reactjs</li>
+            <li>Basic understanding of back-end technology like Php,Java</li>
           
-        </div>
-        <h3 class="resume-title">Education</h3>
-        <div class="resume-item">
-          <h4>Graphic design specialist</h4>
-          <h5>2017 - 2018</h5>
-          <p><em>Stepping Stone Advertising, New York, NY</em></p>
-          <ul>
-            <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-            <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-            <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-            <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-          </ul>
-        </div>
-      </div>
-    </section><!-- End Resume Section -->
-
-    
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg ">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">PHP <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MySQL<i class="val">90%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-    
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Projects</h2>
-        </div>
-<style>
-.card:hover{
+           
+        </ul>
+       </div>
+    <style>
+        /* .card{
+            border-radius: 10px;
+        }
+        .card-img-top{
+            border-radius: 10px 10px 0px 0px;
+        } */
+        .card:hover{
 transform: scale(1.025);
 }
-</style>
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-				<img src="./assets/img/Android_Studio.png" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-          </div>
-		  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-				<img src="./assets/img/Android_Studio.png" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-          </div><div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-				<img src="./assets/img/Android_Studio.png" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-          </div>
-		  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-				<img src="./assets/img/web.jpg" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-          </div>
-		  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-				<img src="./assets/img/web.jpg" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-          </div>
-		  <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
-				<img src="./assets/img/web.jpg" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
-				</div>
-			</div>
-          </div>
-		  <!--
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          -->
-        <button class="btn btn-primary " data-aos="fade-up">
-          <a href="./index2.html"class="text-white">Next</a><i class="bi bi-arrow-right"></i>
-        </button>
-      </div>
-    </section><!-- End Services Section -->
+        /* .table table-responsive{
+            display: flex;
+            flex-wrap: wrap;
+        } */
+    </style>
+       <div class="row ">
+            <h3>Projects:</h3>
+                <div class="col-lg-4 col-md-6 icon-box " data-aos="fade-up">
+                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                        <img src="./1.jpg" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Portfilio website</h5>
+                            <p class="card-text">responsive web design using html,css,javascript & front-end Framework and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go Visite</a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-lg-4 col-md-5 icon-box" data-aos="fade-up">
+                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                        <img src="./1.jpg" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Portfilio website</h5>
+                            <p class="card-text">responsive web design using html,css,javascript & front-end Framework and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go Visite</a>
+                        </div>
+                    </div>
+                  </div>
+                <div class="col-lg-4 col-md-5 icon-box" data-aos="fade-up">
+                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 18rem;">
+                        <img src="./1.jpg" class="card-img-top img-responsive img fluid" alt="..." width="100px" height="100px">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Portfilio website</h5>
+                            <p class="card-text">responsive web design using html,css,javascript & front-end Framework and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go Visite</a>
+                        </div>
+                    </div>
+                  </div>
+           
+         
+         </div>
+       <!-- Experience selection starting -->
+       <div class="row">
+        <h3>Experience:</h3>
+        <h5>Internship example </h5>
+        <p>
+            Provided excellent customer service by addressing inquiries and handling transactions.
+            Managed cash register, accurately processed payments, and reconciled daily sales.
+            Collaborated with a team to ensure store cleanliness and organization.
 
-   
+            <b>Intern, ABC Tech Solutions, Tech City, USA
+                January 20XX - April 20XX</b>
+        
+            Assisted in troubleshooting technical issues and provided software support to end-users.
+            Conducted research and prepared reports on emerging technology trends.
+            Collaborated with a cross-functional team to develop a new software feature, improving user experience.
+        </p>
+       </div> <!-- Experience selection ending -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-	  <div class="section-title">
-          <h2 >About</h2>
-          <p>A highly creative Web Designer with an Associate’s degree in Graphic Design and one year of experience working as a Junior Designer. Proven skills in HTML, CSS, and Adobe Creative Suite. Ability to work independently and collaborate effectively with a team.
-            Excellent written and verbal communication skills. seeking an entry-level position in web design.</p>
-        </div>
+       <div class="row">
+        <h3>Certification</h3>
+        <ul>
+            <li>Certification in Web developement [issuing institution],[Year]</li>
+            <li>Certification in Basic Python [issuing institution],[Year]</li>
+            <li>Certification in Reactjs [issuing institution],[Year]</li>
+            
+        </ul>
+       </div>
+       <div class="row">
+        <h3>Additional skills</h3>
+        <ul>
+            <li>Problem-solving and critical thinking ablities</li>
+            <li>Good communication and interpersonal skills</li>
+            <li>Ablity to learn adapt quickly to new technology</li>
+        </ul>
+       </div>
+       <div class="row">
+        <h3>Awards and Achievements:</h3>
+        <ul>
+            <li>Participated in photography at college level won the second place</li>
+            <li>Participated in photography at college level won the second place</li>
+        </ul>
+        <p>            
+            Example:
+             [University/College Name], [Year]
+            [Any Scholarships or Honors]</p>
+       </div>
+       <div class="row">
+        <h3>DECLARATION:</h3>
 
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>4/510 Alangudi, Tamil Nadu, Pin-622304</p>
+        <p>
+            I hereby declare that the above given information are true to the best of my
+            knowledge.I consider myself familiar with D.VOC (SOFTWARE DVELOPMENT)aspects.
+            I amalso confident of my working abilit</p>
+       </div>
+       <!-- Footer selection starting -->
+       <section id="contact" class="contact">
+        <div class="container">
+       
+  
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
+  
+          <div class="row" data-aos="fade-in">
+  
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>4/510 Alangudi, Tamil Nadu, Pin-622304</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>kanizero5@gmail.com</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+91 8220405679</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d283.40642982939073!2d79.09049564903076!3d10.359627822538457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694271855044!5m2!1sen!2sin" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
               </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>kanizero5@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+91 8220405679</p>
-              </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d283.40642982939073!2d79.09049564903076!3d10.359627822538457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694271855044!5m2!1sen!2sin" width="100%" height="290px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-              
+  
             </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
+  
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Enter Name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+                  </div>
                 </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+               
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
                 </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="text-center"><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+            <style>
+                /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact {
+  padding-bottom: 130px;
+}
 
+.contact .info {
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #050d18;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #173b6c;
+}
+
+.contact .info .email p {
+  padding-top: 5px;
+}
+
+.contact .info .social-links {
+  padding-left: 60px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #149ddd;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact .php-email-form label {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #149ddd;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #37b3ed;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  text-align: center;
+  font-size: 13px;
+  color: #eaebf0;
+}
+
+@media (max-width: 1199px) {
+  #footer {
+    position: static;
+    width: auto;
+    padding-right: 20px 15px;
+  }
+}
+            </style>
+  
+          </div>
+  
         </div>
+      </section><!-- End Contact Section -->
+      <footer id="footer">
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>
+          </div>
+          <div class="credits">
+            Designed by <a href="https://google.com/">Kanish</a>
+          </div>
+        </div>
+      </footer><!-- End  Footer -->
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="background:gray;"><i class="bi bi-arrow-up-short"></i></a>
+  
 
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-in">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <script type="text/javascript">var year = new Date();document.write(year.getFullYear());</script>
-      </div>
-      <div class="credits">
-        Designed by <a href="https://google.com/">Kanish</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="background:rgb(0, 0, 0);"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+      <style>
+        @media print {
+            h2{
+                font-size: 18px;
+            }
+            
+        }
+      </style>
 </body>
-
 </html>

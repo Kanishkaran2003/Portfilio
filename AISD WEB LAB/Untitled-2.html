@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    num1 <input type="text" id="num1">
+    <br><br>
+    <button onclick="dis()"> click</button>
+    <div class="total"></div>
+    
+    <script>
+        function dis() {
+            var num = document.getElementById("num1").value;
+            var resultDiv = document.querySelector(".total");
+            
+            if (num % 2 == 0) {
+                resultDiv.innerHTML = "Even " + num;
+            } else {
+                resultDiv.innerHTML = "Odd " + num;
+            }
+        }
+    </script>
+
+</body>
+<button type="submit"></button>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxiumam number</title>
+</head>
+<body>
+    num1 <input type="text" id="num1"><br><br>
+    num1 <input type="text" id="num2"><br><br>
+    num1 <input type="text" id="num3"><br><br>
+    <p id="result"></p>
+    <button onclick="max()">click</button>
+    <script>
+        function max(){
+            var a=parseInt(document.getElementById("num1").value);
+            var b=parseInt(document.getElementById("num2").value);
+            var c=parseInt(document.getElementById("num3").value);
+            var d=Math.max(a,b,c);
+            if(isNaN(a)||isNaN(b)||isNaN(c)){
+                alert("please enter the value")
+            }
+            document.getElementById('result').innerHTML=+d;
+        }
+    </script>
+</body>
+</html>

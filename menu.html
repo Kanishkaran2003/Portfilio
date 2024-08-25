@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.js"></script>
+    <script type="module" src="./js/jquery.min.js"></script>
+    <script>
+        
+        let menuToggle = document.querySelector(".menuToggle");
+        let navigation = document.querySelector(".navigation");
+        menuToggle.onclick = function () {
+          navigation.classList.toggle("active");
+        };
+   
+    </script>
+</head>
+<body>
+    <div class="navigation">
+        <div class="menuToggle">
+            <li>kani</li>
+        </div>
+    </div>
+ 
+    
+</body>
+</html>
