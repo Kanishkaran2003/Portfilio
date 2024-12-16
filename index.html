@@ -106,20 +106,20 @@
   <section id="contact" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Contact Me</h2>
-      <form>
+      <form name="contact" method="POST" netlify>
         <div class="row">
           <div class="col-md-6 mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
           </div>
           <div class="col-md-6 mb-3">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            <input type="email" class="form-control" id="email" name="gmail" placeholder="Your Email" required>
           </div>
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+          <textarea class="form-control" id="message" rows="5" name="message" placeholder="Your Message" required></textarea>
         </div>
         <div class="text-center">
           <button type="submit" class="btn btn-primary">Send Message</button>
@@ -127,7 +127,25 @@
       </form>
     </div>
   </section>
+<script>
+  const handleSubmit = event => {
+  event.preventDefault();
 
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => alert("Thank you for your submission"))
+    .catch(error => alert(error));
+};
+
+document.querySelector("form").addEventListener("submit", handleSubmit);
+
+</script>
   <!-- Footer -->
   <footer class="bg-dark text-green text-center py-3">
     <p class="mb-0">&copy; 2024 My Portfolio. All Rights Reserved.</p>
